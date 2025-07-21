@@ -583,3 +583,294 @@ footer {
         height: 100px;
     }
 }
+/* Añade esto al final de tu CSS existente */
+
+/* Clients Section */
+.clients {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.client-card {
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.client-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.client-card:hover img {
+    transform: scale(1.05);
+}
+
+.client-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(10, 36, 99, 0.9), transparent);
+    color: white;
+}
+
+/* Technical Projects */
+.technical-projects {
+    padding: 5rem 0;
+    background-color: #f8fafc;
+}
+
+.project-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: #e2e8f0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.category-btn.active {
+    background: var(--secondary);
+    color: white;
+}
+
+.technical-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.tech-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.tech-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.before, .after {
+    position: relative;
+    height: 300px;
+}
+
+.before img, .after img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.before span, .after span {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.tech-details {
+    padding: 2rem;
+}
+
+.tech-details h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.tech-details ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.tech-details li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tech-details i {
+    color: var(--secondary);
+}
+
+.btn-small {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tech-project {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-comparison {
+        grid-template-columns: 1fr;
+    }
+    
+    .before, .after {
+        height: 200px;
+    }
+}
+/* Añade esto al final de tu CSS existente */
+
+/* Clients Carousel */
+.clients {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.clients-swiper {
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.client-slide {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.client-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(10, 36, 99, 0.9), transparent);
+    color: white;
+}
+
+.client-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Projects Carousel */
+.technical-projects {
+    padding: 5rem 0;
+    background-color: #f8fafc;
+}
+
+.projects-swiper {
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.project-slide {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(10, 36, 99, 0.9), transparent);
+    color: white;
+}
+
+.project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-category {
+    display: inline-block;
+    background: var(--secondary);
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Swiper Navigation */
+.swiper-button-next, 
+.swiper-button-prev {
+    color: var(--secondary) !important;
+    background: rgba(255,255,255,0.8);
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}
+
+.swiper-pagination-bullet {
+    background: var(--secondary) !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .client-slide,
+    .project-slide {
+        height: 350px;
+    }
+    
+    .client-info,
+    .project-info {
+        padding: 1.5rem;
+    }
+    
+    .project-info h3 {
+        font-size: 1.5rem;
+    }
+}
