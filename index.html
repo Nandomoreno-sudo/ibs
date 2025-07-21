@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marine Electric | Nautical Electrical Installations</title>
+    <title>STP Marine Electric | Nautical Electrical Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/logo.JPG">
 </head>
@@ -13,7 +14,7 @@
     <header>
         <div class="container header-container">
             <a href="#" class="logo">
-                <img src="images/logo.JPG" alt="Marine Electric Logo">
+                <img src="images/logo.JPG" alt="STP Marine Electric Logo">
             </a>
             
             <nav>
@@ -21,6 +22,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -32,18 +34,18 @@
         </div>
     </header>
     
-<!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
-         <div class="hero-content">
-               <div class="hero-text-box">
-                  <h1>STP Marine Electric</h1>
-                  
-              <div class="hero-buttons">
-                <a href="#contact" class="btn">Get in touch</a>
-                <a href="#services" class="btn btn-outline">Our services</a>
-               </div>
-              </div>
-         </div>
+        <div class="hero-content">
+            <div class="hero-text-box">
+                <h1>STP Marine Electric</h1>
+                <p>Specialists in marine electrical systems since 1998</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Get in touch</a>
+                    <a href="#projects" class="btn btn-outline">View our work</a>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- Services -->
@@ -99,55 +101,166 @@
         <div class="container about-container">
             <div class="about-content">
                 <h2>About Us</h2>
-                <p>Marine Electric is a company specialized in electrical installations and marine electronics with over 15 years of experience in the sector.</p>
+                <p>Marine Electric is a company specialized in electrical installations and marine electronics with over 25 years of experience in the sector.</p>
                 <p>Our team of highly qualified engineers and technicians is committed to providing top quality and safety solutions for all types of vessels, from small sailboats to large yachts.</p>
                 <p>We work with the best materials and equipment on the market, guaranteeing maximum reliability and durability of our installations.</p>
                 <a href="#contact" class="btn">Contact Us</a>
             </div>
             
             <div class="about-img">
-                <img src="images/technician.png" alt="Technicians working on electrical installation">
+                <img src="/images/technician.png" alt="Technicians working on electrical installation">
             </div>
         </div>
     </section>
     
-    <!-- Projects -->
-    <section class="projects" id="projects">
+        <!-- Technical Projects Section -->
+    <section class="technical-projects" id="projects">
         <div class="container">
             <div class="section-title">
                 <h2>Our Projects</h2>
-                <p>Some of our recent work on various types of vessels.</p>
+                <p>Showcase of our specialized installations</p>
             </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/aziza.jpg" alt="Project 1">
-                    <div class="project-overlay">
-                        <h3>M/Y Aziza</h3>
-                        <p>Electrical modernization</p>
+
+            <div class="swiper projects-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="swiper-slide project-slide">
+                        <img src="/images/lithium.png" alt="Lithium Battery Installation">
+                        <div class="project-info">
+                            <h3>Lithium Battery Conversion</h3>
+                            <p>48V 600Ah system installation with Victron monitoring</p>
+                            <span class="project-category">Battery Systems</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="swiper-slide project-slide">
+                        <img src="/images/rack.png" alt="AV System Installation">
+                        <div class="project-info">
+                            <h3>Entertainment System</h3>
+                            <p>Complete multimedia installation with SONOS and Samsung Frame</p>
+                            <span class="project-category">Audiovisual</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="swiper-slide project-slide">
+                        <img src="/images/lighting.png" alt="LED Lighting">
+                        <div class="project-info">
+                            <h3>LED Lighting Upgrade</h3>
+                            <p>Full vessel lighting modernization with RGB controls</p>
+                            <span class="project-category">Lighting</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="swiper-slide project-slide">
+                        <img src="/images/solaryacht.jpg" alt="Solar Panel Installation">
+                        <div class="project-info">
+                            <h3>Solar System</h3>
+                            <p>800W flexible solar panels with MPPT controllers</p>
+                            <span class="project-category">Solar</span>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="swiper-slide project-slide">
+                        <img src="/images/switchboard.png" alt="Solar Panel Installation">
+                        <div class="project-info">
+                            <h3>Switchboard refit</h3>
+                            <p>800W flexible solar panels with MPPT controllers</p>
+                            <span class="project-category">Solar</span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="project-card">
-                    <img src="images/beaugeste.webp" alt="Project 2">
-                    <div class="project-overlay">
-                        <h3>S/Y Beaugeste</h3>
-                        <p>Electronics installation</p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <img src="images/solaryacht.jpg" alt="Project 3">
-                    <div class="project-overlay">
-                        <h3>Solar system</h3>
-                        <p>Recreational catamaran</p>
-                    </div>
-                </div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
     
-    <!-- Contact -->
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Clients</h2>
+                <p>Prestigious vessels we've had the privilege to work with</p>
+            </div>
+            
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Client 1 -->
+                    <div class="swiper-slide client-slide">
+                        <img src="/images/aziza.jpg" alt="M/Y Aziza">
+                        <div class="client-info">
+                            <h3>M/Y Aziza</h3>
+                            <p>41m/132ft Motor Yacht</p>
+                            <p>Full AV system integration</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Client 2 -->
+                    <div class="swiper-slide client-slide">
+                        <img src="/images/beaugeste.webp" alt="S/Y Beaugeste">
+                        <div class="client-info">
+                            <h3>S/Y Beaugeste</h3>
+                            <p>37m/122ft Sailing Yacht</p>
+                            <p>Navigation systems upgrade</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Client 3 -->
+                    <div class="swiper-slide client-slide">
+                        <img src="/images/solaryacht.jpg" alt="Solar Catamaran">
+                        <div class="client-info">
+                            <h3>Solar Catamaran</h3>
+                            <p>Hybrid Eco Vessel</p>
+                            <p>Solar system installation</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Client 4 -->
+                    <div class="swiper-slide client-slide">
+                        <img src="/images/sarissa.webp" alt="M/Y Serenity">
+                        <div class="client-info">
+                            <h3>M/Y Sarissa</h3>
+                            <p>59.7m/ 196ft Luxury Yacht</p>
+                            <p>Electrical refit</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Client 5 -->
+                    <div class="swiper-slide client-slide">
+                        <img src="/images/bluepapillon.webp" alt="S/Y Windancer">
+                        <div class="client-info">
+                            <h3>S/Y Blue Papillon</h3>
+                            <p>43m/142ft Performance Sailboat</p>
+                            <p>Battery bank replacement</p>
+                        </div>
+                    </div>
+                     <!-- Client 6 -->
+                    <div class="swiper-slide client-slide">
+                        <img src="/images/skat.jpg" alt="S/Y Windancer">
+                        <div class="client-info">
+                            <h3>M/Y Skat</h3>
+                            <p>71m/233ft Performance Sailboat</p>
+                            <p>Electrical refit</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container contact-container">
             <div class="contact-info">
@@ -247,7 +360,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
