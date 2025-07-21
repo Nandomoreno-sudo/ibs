@@ -84,7 +84,7 @@ nav ul li a:hover {
 /* Hero Section with Text Box */
 .hero {
     height: 100vh;
-    background: url('/images/Kismet.webp') no-repeat center center/cover;
+    background: url('images/Kismet.webp') no-repeat center center/cover;
     color: white;
     display: flex;
     align-items: center;
