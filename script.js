@@ -19,6 +19,60 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Initialize Clients Swiper
+const clientsSwiper = new Swiper('.clients-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.clients-swiper .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.clients-swiper .swiper-button-next',
+        prevEl: '.clients-swiper .swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+    }
+});
+
+// Initialize Projects Swiper
+const projectsSwiper = new Swiper('.projects-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.projects-swiper .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.projects-swiper .swiper-button-next',
+        prevEl: '.projects-swiper .swiper-button-prev',
+    },
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    }
+});
+
 // Add shadow to header on scroll
 window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {
