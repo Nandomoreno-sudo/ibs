@@ -33,7 +33,7 @@ header {
     background-color: var(--header-gray);
     color: white;
     padding: 0.25rem 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -874,3 +874,4 @@ footer {
         font-size: 1.5rem;
     }
 }
+
