@@ -114,7 +114,7 @@ nav ul li a:hover {
     position: relative;
     z-index: 2;
     padding: 2rem;
-    margin-bottom: -25%; /* Más porcentaje = más abajo */
+    margin-bottom: -15%; /* Más porcentaje = más abajo */
 }
 
 
@@ -874,4 +874,5 @@ footer {
         font-size: 1.5rem;
     }
 }
+
 
